@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api-service
-        image: robolion1200/my-api-service:latest
+        image: robolion1200/my-api-service:21042025.1
         ports:
         - containerPort: 5000
         resources:
