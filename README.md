@@ -29,9 +29,9 @@ A K8S cluster on minikube, with a simple service that exposes an API to end user
 - [service.yaml](./service.yaml): creates a loadbalancer service in front of the pods
 - [hpa.yaml](./hpa.yaml): Horizontal pod autoscaler. Scales number of pods up and down in response to load, as seen through the metrics. During testing load caused scaling out from 3 to 6, and after load went down, reverted to 3.
 - [pod.yaml](./pod.yaml): a pod with bash for manual tests.
-- [bundle.yaml](./bundle.yaml): k6 pods infra yaml Copy into k6-operator folder to override default.
+- [bundle.yaml](./bundle.yaml): k6 pods infra yaml. Copy into k6-operator folder to override default.
 - [test.js](./test.js): test code for k6. Copy into k6-operator folder. Add with `kubectl create configmap k6-test --from-file=test.js`
-- [testrun.yaml](./testrun.yaml): k6 test pods .Copy into k6-operator folder. Run test with `kubectl apply -f testrun.yaml` and cleanup with `kubectl delete -f testrun.yaml`
+- [testrun.yaml](./testrun.yaml): k6 test pods. Copy into k6-operator folder. Run test with `kubectl apply -f testrun.yaml` and cleanup with `kubectl delete -f testrun.yaml`
 
 ## Test results
 Testing scenario: 100 users sending 1 request per second over 9 minutes, with a ramp up and ramp down period, for a total of over 50k requests.
