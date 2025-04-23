@@ -1,0 +1,12 @@
+apiVersion: k6.io/v1alpha1
+kind: TestRun
+metadata:
+  name: k6-test-run
+spec:
+  parallelism: 2  # Adjust this number based on your needs
+  arguments: "--vus 100 --duration 9m"
+  script:
+    configMap:
+      name: k6-test
+      file: test.js
+
