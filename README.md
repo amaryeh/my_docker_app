@@ -36,7 +36,15 @@ A K8S cluster on minikube, with a simple service that exposes an API to end user
 ## Test results
 Testing scenario: 100 users sending 1 request per second over 9 minutes, with a ramp up and ramp down period.
 
-> TOTAL RESULTS
+The results indicate that the application handled the load successfully, with:
+
+100% of requests returning a status code of 200.
+Average response time of 6.19ms, with a maximum of 3.29s.
+No failed requests.
+
+Detailed Metrics:
+TOTAL RESULTS
+
     checks_total.......................: 53607   104.524564/s
     checks_succeeded...................: 100.00% 53607 out of 53607
     checks_failed......................: 0.00%   0 out of 53607
@@ -58,5 +66,3 @@ Testing scenario: 100 users sending 1 request per second over 9 minutes, with a 
     NETWORK
     data_received...........................................................: 8.4 MB 16 kB/s
     data_sent...............................................................: 7.1 MB 14 kB/s
-
-
