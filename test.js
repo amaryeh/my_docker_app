@@ -10,7 +10,7 @@ export let options = {
 };
 
 export default function () {
-  let res = http.get('http://10.96.224.187:8080/price?product_id=P124');
+  let res = http.get('http://api-service.default.svc.cluster.local:8080/price?product_id=P124');
   check(res, { 'status was 200': (r) => r.status === 200 });
   sleep(1);
 }
