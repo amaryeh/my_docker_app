@@ -20,8 +20,8 @@ A K8S cluster on minikube, with a simple service that exposes an API to end user
 4. k6-operator `git clone https://github.com/grafana/k6-operator && cd k6-operator`
 
 ### Files
-- !start_app_pods.sh: wrapper that calls the k8s yamls
-- !app.py: the application code
+- [start_app_pods.sh](./start_app_pods.sh): wrapper that calls the k8s yamls
+- [app.py](app.py): the application code
 - prices.txt: flatfile mapping product id to price. Downloaded on pod instantiation, so can be updated.
 - dockerfile: used to build the image.
 - requirements.txt: python prereqs used by docker when building the image.
