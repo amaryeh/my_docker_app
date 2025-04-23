@@ -15,8 +15,7 @@ A K8S cluster on minikube, with a simple service that exposes an API to end user
 ### Prerequisites
 1. Docker desktop
 2. minikube, including metrics server 
-'minikube addons enable metrics-server'
+`minikube addons enable metrics-server`
 3. kubectl
-4. k6-operator 
-'git clone https://github.com/grafana/k6-operator && cd k6-operator'
+4. k6-operator `git clone https://github.com/grafana/k6-operator && cd k6-operator`
 
