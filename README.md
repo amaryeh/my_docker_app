@@ -44,7 +44,7 @@ No failed requests.
 
 Detailed Metrics:
 ```markdown
-```plaintext
+
 TOTAL RESULTS
 
     checks_total.......................: 53607   104.524564/s
