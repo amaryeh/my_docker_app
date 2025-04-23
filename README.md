@@ -43,8 +43,9 @@ Average response time of 6.19ms, with a maximum of 3.29s.
 No failed requests.
 
 Detailed Metrics:
-
-```TOTAL RESULTS
+```markdown
+```plaintext
+TOTAL RESULTS
 
     checks_total.......................: 53607   104.524564/s
     checks_succeeded...................: 100.00% 53607 out of 53607
